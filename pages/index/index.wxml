@@ -1,4 +1,10 @@
 <!--index.wxml-->
-<view class="container">
-  你好，少年！
+<view class="c">
+  <!--longitude为经度值,latitude为纬度值,scale为缩放范围（1-18）-->
+  <map 
+    class="a" 
+    longitude="113.01" 
+    latitude="28.21"
+    scale="{{a}}"
+    ></map>
 </view>

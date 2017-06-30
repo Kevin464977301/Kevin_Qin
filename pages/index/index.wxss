@@ -1,21 +1,15 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.c{
+  /* 
+    vh代表当前页面高的1%
+    100vh代表当前页面高度的1% * 100  
+  */
+  height:100vh;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
+/*定义地图的样式并命名为a*/
+/* {} 是格式*/
+.a{
+  /*设置宽度和高度为100%，高度与父元素同高*/
+  width:100%;
+  height: 100%;
 }
