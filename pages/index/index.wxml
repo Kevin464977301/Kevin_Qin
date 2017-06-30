@@ -3,8 +3,8 @@
   <!--longitude为经度值,latitude为纬度值,scale为缩放范围（1-18）-->
   <map 
     class="a" 
-    longitude="113.01" 
-    latitude="28.21"
+    longitude="{{longitude}}" 
+    latitude="{{latitude}}"
     scale="{{a}}"
     ></map>
 </view>
