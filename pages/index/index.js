@@ -6,7 +6,18 @@ Page({
     //b: "嘻嘻哈哈"
     a: 18,
     longitude: 113.01,
-    latitude: 28.21
+    latitude: 28.21,
+    control: [{
+      id: 1,
+      iconPath: '/images/Home_page/scan_icon.png',
+      position: {
+        left: 114,
+        top: 400,
+        width: 150,
+        height: 150
+      },
+      clickable: true
+    }]
   },
   //onReady代表当程序加载完成的时候
   //function(){}是一个格式
