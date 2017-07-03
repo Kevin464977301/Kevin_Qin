@@ -7,17 +7,137 @@ Page({
     a: 18,
     longitude: 113.01,
     latitude: 28.21,
+    //control 添加控件
     control: [{
+      //免费骑车背景
+      id: 0,
+      iconPath: '/images/Home_page/backdrop_icon.png',
+      position: {
+        left: 0,
+        top: 350,
+        width: 375,
+        height: 290
+      },
+      chickable: false
+    },{
+      //免费骑车图标
       id: 1,
       iconPath: '/images/Home_page/scan_icon.png',
       position: {
-        left: 114,
-        top: 400,
-        width: 150,
-        height: 150
+        left: 124,
+        top: 420,
+        width: 120,
+        height: 120
       },
       clickable: true
-    }]
+    },{
+      //个人中心图标
+      id: 2,
+      iconPath:'/images/Home_page/personal_icon.png',
+      position:{
+        left:30,
+        top: 530,
+        width:20,
+        height:20
+      },
+      clickable: true
+    },{
+      //活动中心图标
+      id: 3,
+      iconPath:'/images/Home_page/activity_icon.png',
+      position:{
+        left:320,
+        top:530,
+        width:20,
+        height:20
+      },
+      clickable: true
+    },{
+      //维修图标
+      id: 4,
+      iconPath:'/images/Home_page/service_icon.png',
+      position:{
+        left:305,
+        top:300,
+        width:50,
+        height:50
+      },
+      clickable: true
+    },{
+      //重新定位图标
+      id: 5,
+      iconPath: '/images/Home_page/break_icon.png',
+      position: {
+        left: 305,
+        top: 350,
+        width: 50,
+        height: 50
+      },
+      clickable: true
+    },{
+      //提示消息
+      id:6,
+      iconPath: '/images/Home_page/message_icon.png',
+      position: {
+        left:178,
+        top:40,
+        width:230,
+        height:50
+      },
+      chickable: false
+    },{
+      //警告标志
+      id: 7,
+      iconPath: '/images/Home_page/warning_icon.png',
+      position: {
+        left: 195,
+        top: 52,
+        width: 20,
+        height: 20
+      },
+      chickable: true
+    },{
+      //小黄车Logo
+      id: 8,
+      iconPath: '/images/Home_page/logo_icon.png',
+      position: {
+        left: 10,
+        top: 45,
+        width: 100,
+        height: 40
+      },
+      chickable: false
+    },{
+      //向下键
+      id: 8,
+      iconPath: '/images/Home_page/down_icon.png',
+      position: {
+        left: 175,
+        top: 400,
+        width: 20,
+        height: 10
+      },
+      chickable: true
+    },{
+      id:9,
+      iconPath:'/images/Home_page/location_icon_blue.png',
+      position:{
+        left:190,
+        top:300,
+        width:30,
+        height:35
+      }
+    }, {
+      id: 10,
+      iconPath: '/images/Home_page/location_icon.png',
+      position: {
+        left: 210,
+        top: 310,
+        width: 30,
+        height: 35
+      }
+    }
+    ]
   },
   //onReady代表当程序加载完成的时候
   //function(){}是一个格式
