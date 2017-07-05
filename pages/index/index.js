@@ -265,7 +265,7 @@ Page({
             width: 100,
             height: 40
           },
-          chickable: false
+          chickable: true
         }, {
           id: 9,
           iconPath: '/images/Home_page/message_icon.png',
