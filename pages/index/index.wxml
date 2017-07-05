@@ -4,12 +4,14 @@
   <!--longitude为经度值,latitude为纬度值,scale为缩放范围（1-18）-->
   <!--class="c"从wxss中调用c的样式,class="a"从wxss中调用a的样式-->
   <!--{{ }}这个是格式,必须这样写才能从js中获取值-->
+  <!--bindcontroltap用于配置点击控件时的处理函数controltap-->
   <map 
     class="map" 
     longitude="{{longitude}}" 
     latitude="{{latitude}}" 
     scale="{{scale}}" 
     controls="{{control}}" 
-    markers="{{mark}}"
+    markers="{{mark}}" 
+    bindcontroltap="controltap" 
     ></map>
 </view>

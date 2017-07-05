@@ -1,6 +1,10 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/services/services",
+    "pages/personal/personal",
+    "pages/activity/activity",
+    "pages/scan/scan",
     "pages/logs/logs"
   ],
   "window":{

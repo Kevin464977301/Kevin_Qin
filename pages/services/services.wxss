@@ -1,0 +1,10 @@
+/* pages/services/services.wxss */
+.servicebox{
+  /* 
+    vh代表当前页面高的1%
+    100vh代表当前页面高度的1% * 100  
+  */
+  height:100vh;
+  /*设置宽度为整个手机的宽度*/
+  width:100%;
+}

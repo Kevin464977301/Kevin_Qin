@@ -1,5 +1,6 @@
 //index.js
 Page({
+
   //数据
   data: {
     //两个键值中需要用逗号(,)进行区分
@@ -22,76 +23,76 @@ Page({
     }];
 
 
-    //米字循环
-    //for循环
-    for(var i=1;i<=10;i++){
-      var a = i*0.0001;
-      //向数组中添加标记
-      marker.push({
-        //图标的路径
-        iconPath:"/images/Home_page/location_icon.png",
-        //纬度值
-        latitude: 28.228209,
-        //经度值
-        longitude: 112.938814+a,
-        width: 35,
-        height: 40
-      }, {
-          iconPath: "/images/Home_page/location_icon.png",
-          latitude: 28.228209+a,
-          longitude: 112.938814,
-          width: 35,
-          height: 40
-        })
-    };
-    for(var i=1;i<=10;i++){
-      var a = i*0.0001;
-      marker.push({
-        iconPath:"/images/Home_page/location_icon.png",
-        latitude: 28.228209,
-        longitude: 112.938814-a,
-        width: 35,
-        height: 40
-      }, {
-          iconPath: "/images/Home_page/location_icon.png",
-          latitude: 28.228209-a,
-          longitude: 112.938814,
-          width: 35,
-          height: 40
-        })
-    };
-    for (var i = 1; i <= 10; i++) {
-      var a = i * 0.0001;
-      marker.push({
-        iconPath: "/images/Home_page/location_icon.png",
-        latitude: 28.228209 + a,
-        longitude: 112.938814-a,
-        width: 35,
-        height: 40
-      }, {
-          iconPath: "/images/Home_page/location_icon.png",
-          latitude: 28.228209-a,
-          longitude: 112.938814 + a,
-          width: 35,
-          height: 40
-        })
-    };
-    for (var i = 1; i <= 10; i++) {
-      var a = i * 0.0001;
-      marker.push({
-        iconPath: "/images/Home_page/location_icon.png",
-        latitude: 28.228209 - a,
-        longitude: 112.938814 - a,
-        width: 35,
-        height: 40
-      }, {
-          iconPath: "/images/Home_page/location_icon.png",
-          latitude: 28.228209 + a,
-          longitude: 112.938814 + a,
-          width: 35,
-          height: 40
-        })
-    };
+    // //米字循环
+    // //for循环
+    // for(var i=1;i<=10;i++){
+    //   var a = i*0.0001;
+    //   //向数组中添加标记
+    //   marker.push({
+    //     //图标的路径
+    //     iconPath:"/images/Home_page/location_icon.png",
+    //     //纬度值
+    //     latitude: 28.228209,
+    //     //经度值
+    //     longitude: 112.938814+a,
+    //     width: 35,
+    //     height: 40
+    //   }, {
+    //       iconPath: "/images/Home_page/location_icon.png",
+    //       latitude: 28.228209+a,
+    //       longitude: 112.938814,
+    //       width: 35,
+    //       height: 40
+    //     })
+    // };
+    // for(var i=1;i<=10;i++){
+    //   var a = i*0.0001;
+    //   marker.push({
+    //     iconPath:"/images/Home_page/location_icon.png",
+    //     latitude: 28.228209,
+    //     longitude: 112.938814-a,
+    //     width: 35,
+    //     height: 40
+    //   }, {
+    //       iconPath: "/images/Home_page/location_icon.png",
+    //       latitude: 28.228209-a,
+    //       longitude: 112.938814,
+    //       width: 35,
+    //       height: 40
+    //     })
+    // };
+    // for (var i = 1; i <= 10; i++) {
+    //   var a = i * 0.0001;
+    //   marker.push({
+    //     iconPath: "/images/Home_page/location_icon.png",
+    //     latitude: 28.228209 + a,
+    //     longitude: 112.938814-a,
+    //     width: 35,
+    //     height: 40
+    //   }, {
+    //       iconPath: "/images/Home_page/location_icon.png",
+    //       latitude: 28.228209-a,
+    //       longitude: 112.938814 + a,
+    //       width: 35,
+    //       height: 40
+    //     })
+    // };
+    // for (var i = 1; i <= 10; i++) {
+    //   var a = i * 0.0001;
+    //   marker.push({
+    //     iconPath: "/images/Home_page/location_icon.png",
+    //     latitude: 28.228209 - a,
+    //     longitude: 112.938814 - a,
+    //     width: 35,
+    //     height: 40
+    //   }, {
+    //       iconPath: "/images/Home_page/location_icon.png",
+    //       latitude: 28.228209 + a,
+    //       longitude: 112.938814 + a,
+    //       width: 35,
+    //       height: 40
+    //     })
+    // };
     
 
     //控制台输出
@@ -145,16 +146,16 @@ Page({
         };
 
 
-        //5张图片随机显示
-        for (var i = 1; i <= 5; i++) {
-          marker.push({
-            iconPath: "/images/Home_page/QQ.png",
-            latitude: res.latitude + Math.random() * 0.0005,
-            longitude: res.longitude + Math.random() * 0.0005,
-            width: 35,
-            height: 40
-          })
-        }
+        // //5张图片随机显示
+        // for (var i = 1; i <= 5; i++) {
+        //   marker.push({
+        //     iconPath: "/images/Home_page/QQ.png",
+        //     latitude: res.latitude + Math.random() * 0.0005,
+        //     longitude: res.longitude + Math.random() * 0.0005,
+        //     width: 35,
+        //     height: 40
+        //   })
+        // }
 
 
         self.setData({
@@ -187,7 +188,7 @@ Page({
             width: res.windowWidth,
             height: 253
           },
-          chickable: false
+          clickable: false
         },{
           //扫一扫图标
           id:2,
@@ -198,7 +199,7 @@ Page({
             width:120,
             height:120
           },
-          chickable: true
+          clickable: true
         },{
           //向下键
           id:3,
@@ -209,7 +210,7 @@ Page({
             width: 20,
             height: 10
           },
-          chickable: true
+          clickable: true
         },{
           //个人中心图标
           id:4,
@@ -220,7 +221,7 @@ Page({
             width: 30,
             height: 30
           },
-          chickable: true
+          clickable: true
         }, {
           //活动中心图标
           id: 5,
@@ -232,7 +233,7 @@ Page({
             width: 30,
             height: 30
           },
-          chickable: true
+          clickable: true
         }, {
           //重新定位图标(没车用)
           id: 6,
@@ -243,7 +244,7 @@ Page({
             width: 60,
             height: 60
           },
-          chickable: true
+          clickable: true
         }, {
           //维修中心图标
           id: 7,
@@ -254,7 +255,7 @@ Page({
             width: 60,
             height: 60
           },
-          chickable: true
+          clickable: true
         }, {
           //小黄车Logo
           id: 8,
@@ -265,7 +266,7 @@ Page({
             width: 100,
             height: 40
           },
-          chickable: true
+          clickable: false
         }, {
           id: 9,
           iconPath: '/images/Home_page/message_icon.png',
@@ -275,7 +276,7 @@ Page({
             width: 220,
             height: 40
           },
-          chickable: true
+          clickable: false
         }
         ];
         self.setData({
@@ -283,5 +284,29 @@ Page({
         });
       }      
     })
+  },
+  controltap(e){
+    console.log(e.controlId) 
+    if(e.controlId == 2){
+      wx.navigateTo({
+        //扫一扫页面
+        url: '/pages/scan/scan',
+      })
+    } else if (e.controlId == 4){
+        wx.navigateTo({
+          //个人中心页面
+          url: '/pages/personal/personal',
+        })
+    } else if (e.controlId == 5) {
+      wx.navigateTo({
+        //活动中心页面
+        url: '/pages/activity/activity',
+      })
+    } else if (e.controlId == 7) {
+      wx.navigateTo({
+        //维修页面
+        url: '/pages/services/services',
+      })
+    }
   }
 })
